@@ -1,5 +1,5 @@
 .site-header {
-    background: $dark-blue;
+    background: $color-dark-bg;
     padding: 0 0 0.5rem 0;
     color: white;
     text-align: center;
@@ -16,11 +16,6 @@
     margin-bottom: 25px;
 }
 
-.separator-small {
-    @include push--auto;
-    border-top: 2px solid #fb6470;
-    width: 75%;
-}
 
 .site-header h1 {
     margin-bottom: 0;
@@ -47,18 +42,10 @@
 
     a:hover {
         text-decoration: none;
-        color: grey;
+        color: rgb(233, 231, 231);
     }
-
-    a:first-of-type{
-        background: #fb6470;
-    }
-    
-    a:last-of-type{
-        background: #32bec7;
-    }
-
 }
+
 .tools {
    .gulp-logo {
        fill: white;

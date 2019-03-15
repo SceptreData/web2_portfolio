@@ -1,0 +1,13 @@
+.separator-small {
+    @include push--auto;
+    border-top: 2px solid $color-separator;
+    width: 75px;
+}
+
+.color-bg-primary {
+  background: $salmon-pink;
+}
+
+.color-bg-secondary {
+  background: $cool-aqua;
+}

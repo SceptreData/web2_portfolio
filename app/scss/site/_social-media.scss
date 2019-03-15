@@ -1,0 +1,40 @@
+.social-media-section {
+  max-width: 480px;
+  text-align: center;
+
+  h2 {margin-bottom: 18px;}
+
+  .separator-small {
+    margin-bottom: 1.7rem;
+  }
+
+  p {
+    @include push--auto;
+    max-width: 48ch;
+  }
+
+  svg {
+    width: 65px;
+    fill: currentColor;
+  }
+
+  a {
+    color: $color-light-icon;
+
+    &:hover{
+      text-decoration: none;
+      color: black;
+      fill: black;
+    }
+  }
+}
+
+.social-media-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  li {
+    flex-basis: 33%;
+  }
+}
