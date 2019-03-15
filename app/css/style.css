@@ -131,11 +131,79 @@ table {
   width: 40px;
   fill: #b8b8bd; }
 
+.skills-summary {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 480px;
+  margin-bottom: 100px; }
+  .skills-summary svg {
+    width: 233px; }
+  .skills-summary h2 {
+    margin-bottom: 0; }
+  .skills-summary .separator-small {
+    margin-bottom: 30px; }
+
+.single-chart {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 50px; }
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px; }
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8; }
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards; }
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100; } }
+
+.circular-chart.red .circle {
+  stroke: #ff1d25; }
+
+.circular-chart.green .circle {
+  stroke: #7ac943; }
+
+.circular-chart.blue .circle {
+  stroke: #38b0f1; }
+
+.circular-chart.pink .circle {
+  stroke: #ff7bac; }
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle; }
+
+.skill-description {
+  fill: #666;
+  font-size: 3px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  text-anchor: middle; }
+
 .social-media-section {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 480px;
   text-align: center; }
   .social-media-section h2 {
-    margin-bottom: 18px; }
+    padding-bottom: 18px; }
   .social-media-section .separator-small {
     margin-bottom: 1.7rem; }
   .social-media-section p {
@@ -146,18 +214,81 @@ table {
     width: 65px;
     fill: currentColor; }
   .social-media-section a {
-    color: #bcc9ce; }
+    color: #bcc9ce;
+    transition: 0.2s ease-in-out; }
     .social-media-section a:hover {
       text-decoration: none;
+      transition: 0.3s ease-in-out;
       color: black;
       fill: black; }
 
 .social-media-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: center; }
   .social-media-links li {
     flex-basis: 33%; }
+
+.work-experience-section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  text-align: center; }
+  .work-experience-section h2 {
+    margin-bottom: 0; }
+  .work-experience-section .separator-small {
+    margin-bottom: 30px; }
+
+.job-position {
+  position: relative;
+  text-align: left;
+  color: white;
+  border-radius: .4em;
+  width: 85%;
+  margin-bottom: 26px;
+  padding: 0 1rem; }
+  .job-position .job-title {
+    padding-top: 1rem;
+    font-weight: 700; }
+    .job-position .job-title span {
+      font-weight: 400; }
+  .job-position .job-description {
+    padding-bottom: 1rem; }
+
+.job-position:nth-child(n) {
+  background: #7ac943; }
+
+.job-position:nth-child(2n) {
+  background: #3fa9f5;
+  margin-left: auto; }
+
+.job-position:nth-child(odd):after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #7ac943;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-left: -20px; }
+
+.job-position:nth-child(2n):after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 27px solid transparent;
+  border-left-color: #3fa9f5;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -13.5px;
+  margin-right: -27px; }
 
 .separator-small {
   margin-left: auto;
