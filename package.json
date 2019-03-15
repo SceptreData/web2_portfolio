@@ -1,0 +1,24 @@
+{
+  "name": "web2_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Site for web2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SceptreData/web2_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SceptreData/web2_portfolio/issues"
+  },
+  "homepage": "https://github.com/SceptreData/web2_portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
