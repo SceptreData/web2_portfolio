@@ -24,6 +24,7 @@
     }
 
     .conversation-layout {
+        @include push--auto;
         max-width: 800px;
     }
 
