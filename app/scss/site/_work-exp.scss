@@ -25,7 +25,10 @@
 
     .conversation-layout {
         @include push--auto;
-        max-width: 800px;
+        max-width: 95%;
+        @media screen and (min-width: $tablet-vp){
+            max-width: 800px;
+        }
     }
 
     .work-exp-blurb {
