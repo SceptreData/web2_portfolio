@@ -1,8 +1,8 @@
-@import "mixins/index";
 @import "init/index";
+@import "mixins/index";
+@import "typography/index";
 @import "vars/index";
 @import "site/index";
-@import "typography/index";
 
 body {
   // background: blue;

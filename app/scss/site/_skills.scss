@@ -7,7 +7,9 @@
         width: 233px;
     }
 
-    h2 { margin-bottom: 0;}
+    h2 { 
+      color: $color-heading-dk;
+      margin-bottom: 20px;}
 
     .separator-small {
         margin-bottom: 30px;
@@ -66,7 +68,8 @@
 
   .percentage {
     fill: #666;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     font-size: 0.5em;
     text-anchor: middle;
   }

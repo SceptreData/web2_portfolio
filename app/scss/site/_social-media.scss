@@ -1,35 +1,67 @@
 .social-media-section {
-  @include push--auto;
-  max-width: 480px;
   text-align: center;
+  margin-bottom: 65px;
+  
+  @media screen and (min-width:$tablet-vp){
+    background: $color-grey-bg;
+    padding-bottom: 2rem;
+  }
+
 
   h2 {
+    @include push--auto;
+    color: $color-heading-lt;
+    @media screen and (min-width: $tablet-vp){
+      color: white;
+    }
     padding-bottom: 18px;
+    padding-top: 50px;
   }
 
   .separator-small {
+    @include push--auto;
     margin-bottom: 1.7rem;
+    @media screen and (min-width: $tablet-vp){
+      display: none;
+    }
   }
 
-  p {
+  .social-blurb {
     @include push--auto;
     max-width: 48ch;
+    color: $color-body-lt;
+    font-weight: 600;
+    line-height: 1.4;
+
+    @media screen and (min-width: $tablet-vp){
+      color: lighten($color-body-dk, 2%);
+      margin-bottom: 50px;
+    }
   }
 
   svg {
     width: 65px;
+    height: 75px;
     fill: currentColor;
   }
 
-  a {
+  a
+   {
     color: $color-light-icon;
+    @media screen and (min-width: $tablet-vp){
+     color: $color-dark-icon;
+    }
     transition: 0.2s ease-in-out;
 
     &:hover{
       text-decoration: none;
       transition: 0.3s ease-in-out;
-      color: black;
-      fill: black;
+      color: darken($color-light-icon, 20%);
+      fill: darken($color-light-icon, 20%);
+      @media screen and (min-width: $tablet-vp){
+        color: lighten($color-dark-icon, 20%);
+        fill: lighten($color-dark-icon, 20%);
+      }
     }
   }
 }
@@ -38,8 +70,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
+  @include push--auto;
+  @media screen and (min-width: $tablet-vp){
+    max-width: 600px;
+  }
 
   li {
     flex-basis: 33%;
+    @media screen and (min-width:$tablet-vp) {
+      flex-basis: 20%;
+    }
   }
+
+    
+    
 }

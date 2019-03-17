@@ -1,0 +1,60 @@
+.education-section {
+  background: #f4f1f4;
+  text-align: center;
+  padding: 2.8rem 0;
+  margin-bottom: 135px;
+
+  h2 {
+    margin-bottom: 10px;
+    @include push--auto;
+  }
+
+  .separator-small {
+    margin-bottom: 20px;
+  }
+
+  .education-blurb {
+    max-width: 460px;
+    @include push--auto;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+}
+
+.education-card {
+  @include push--auto;
+  background: #353541;
+  max-width: 480px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: left;
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 40px;
+
+  h5 {
+    margin-bottom: 5px;
+  }
+
+  .education-date {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: $color-accent-muted;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: $color-link-dk;
+    &:hover {
+      color: $color-link-dk-hover;
+      text-decoration: none;
+    }
+  }
+
+  .education-program,
+  .education-school-name {
+    color: $color-subheading-dk;
+  }
+  .education-program {margin-bottom: 0;}
+  .education-description {margin-bottom: 0;}
+  }

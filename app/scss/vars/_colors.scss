@@ -1,13 +1,53 @@
 $dark-blue: #353541;
-$light-grey: #b8b8bd;
 $salmon-pink: #fb6470;
+$salmon-pink-dk: #dd5c68;
 $cool-aqua: #32bec7;
+
+/* Ok, this Grey section got out of hand */
+$light-grey: #b8b8bd;
 $social-grey: #bcc9ce;
+$social-grey-dark: #cbd5d9;
+$shark-grey: #8e8e93;
+$shark-grey-lt: #b7b7c7;
+$evil-grey: #707074;
+$muted-grey: #9e9e9e;
+$muted-grey-lt: #999999;
+$muted-grey-med: #686868;
+$muted-grey-dk: #3e3e3e;
+$excalibur-grey: #adadad;
+$label-grey: #6f6f6f;
+$footer-grey: #585858;
+$blue-grey: #889ea8;
+$blue-grey-text: #c9d2d6;
+$so-help-me-god-grey: #aba9a9;
 
 $color-dark-bg: $dark-blue;
+$color-grey-bg: $blue-grey;
 $color-separator: $salmon-pink;
 
 $color-button-primary: $salmon-pink;
 $color-button-secondary: $cool-aqua;
 
 $color-light-icon: $social-grey;
+$color-dark-icon: $social-grey-dark;
+
+$color-accent: $salmon-pink;
+$color-accent-muted: $salmon-pink-dk;
+
+$color-heading-lt: $muted-grey;
+$color-heading-med: $muted-grey-med;
+$color-heading-dk: $muted-grey-dk;
+$color-heading-dk-alt: $so-help-me-god-grey;
+
+$color-subheading-dk: $evil-grey;
+
+$color-body-lt: $muted-grey-lt;
+$color-body-dk: $blue-grey-text;
+$color-body-dk-alt: $excalibur-grey;
+
+$color-link-dk: $shark-grey;
+$color-link-dk-hover: $shark-grey-lt;
+
+$color-label: $label-grey;
+
+$color-footer-txt: $footer-grey;

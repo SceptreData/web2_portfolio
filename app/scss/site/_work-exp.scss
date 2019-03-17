@@ -1,42 +1,102 @@
 .work-experience-section {
     @include push--auto;
-    max-width: 480px;
     text-align: center;
+    margin-bottom: 45px;
+    max-width: 480px;
+    @media screen and (min-width: $tablet-vp){
+        max-width: 90%;
+    }
 
-    h2 {margin-bottom: 0;}
-    .separator-small {margin-bottom: 30px;}
+    h2 {
+        color: $color-heading-med;
+        margin-bottom: 13px;
+        @media screen and (min-width: $tablet-vp){
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: $color-heading-dk-alt;
+        }
+    }
+    .separator-small {
+        @media screen and (min-width: $tablet-vp) {
+           display: none; 
+        }
+        margin-bottom: 30px;
+    }
+
+    .conversation-layout {
+        max-width: 800px;
+    }
+
+    .work-exp-blurb {
+        @include push--auto;
+        color: $color-body-lt;
+        font-weight: 600;
+        margin-bottom: 40px;
+        @media screen and (min-width: $tablet-vp){
+            max-width: 800px;
+            font-weight: 400;
+            color: $color-body-dk-alt;
+        }
+    }
     
 }
 .job-position { 
-  
     position: relative;
     text-align: left;
     color: white;
     border-radius: .4em;
-    width: 85%;
+    width: 375px;
     margin-bottom: 26px;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    @media screen and (min-width:$tablet-vp){
+        width: 300px;
+        padding: 0 1rem;
+    }
     
     .job-title {
         padding-top: 1rem;
         font-weight: 700;
         span {
             font-weight: 400;
+            @media screen and (min-width:$tablet-vp){
+                font-size: 15px;
+            }
+        }
+        margin-bottom: 9px;
+        font-size: 20px;
+        @media screen and (min-width: $tablet-vp){
+            font-size: 17px;
+            padding-top: 30px;
         }
     }
 
+    .job-date {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+    
     .job-description {
         padding-bottom: 1rem;
+        font-weight: 600;
     }
 }
 
-.job-position:nth-child(n) {
+.job-position:nth-child(odd) {
     background: #7ac943;
+    @media screen and (min-width: $tablet-vp){
+       background: #3fa9f5; 
+       margin-left: auto;
+    }
 }
 
 .job-position:nth-child(2n) {
     background: #3fa9f5;
     margin-left: auto;
+    @media screen and (min-width: $tablet-vp){
+        background: #7ac943;
+        margin-left: 0;
+    }
 }
 
 .job-position:nth-child(odd):after {
@@ -47,11 +107,14 @@
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-right-color: #7ac943;
     border-left: 0;
     border-bottom: 0;
     margin-top: -10px;
     margin-left: -20px;
+    border-right-color: #7ac943;
+    @media screen and (min-width: $tablet-vp){
+        border-right-color: #3fa9f5;
+    }
 }
 
 .job-position:nth-child(2n):after {
@@ -62,9 +125,12 @@
     width: 0;
     height: 0;
     border: 27px solid transparent;
-    border-left-color: #3fa9f5;
     border-right: 0;
     border-bottom: 0;
     margin-top: -13.5px;
     margin-right: -27px;
+    border-left-color: #3fa9f5;
+    @media screen and (min-width: $tablet-vp){
+       border-left-color: #7ac943;
+    }
 }

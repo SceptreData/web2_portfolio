@@ -1,0 +1,20 @@
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+  p {
+    font-size: 14px;
+    margin-bottom: .5rem;
+    color: $color-footer-txt;
+  }
+
+  .footer-email {
+    a{
+      $footer-link: lighten($color-footer-txt, 20%);
+      color: $footer-link;
+
+      &:hover {
+        color: darken($footer-link, 50%);
+      }
+    }
+  }
+}
