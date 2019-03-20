@@ -36,6 +36,12 @@
     @include push--auto;
     max-width: 700px;
   }
+  @media screen and (min-width:$desktop-vp){
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 .education-card {
   @include push--auto;
@@ -46,6 +52,7 @@
   text-align: left;
   padding: 1.5rem 1.5rem;
   margin-bottom: 40px;
+  flex-basis: 50%;
 
   h5 {
     margin-bottom: 5px;
@@ -107,6 +114,34 @@
 
       &:nth-child(even){
         margin-left: 0;
+      }
+    }
+    @media screen and (min-width:$desktop-vp){
+      max-width: 500px;
+      justify-content: space-between;
+      margin-left: 0;
+      margin-right: 0;
+      h5 {
+        font-size: 1.3rem;
+      }
+      .education-date {
+        font-size: 1rem;
+      }
+
+      .education-location {
+        a {
+          font-size: .9rem;
+        }
+        .education-program {
+          font-size: 1rem;
+        }
+
+        .education-school-name{
+          font-size: 1.1rem;
+        }
+      }
+      .education-description {
+        font-size: .9rem;
       }
     }
   }

@@ -10,11 +10,27 @@
     @include push--auto;
     width: 12.5rem;
     margin-bottom: 40px;
+    @media screen and (min-width: $desktop-vp){
+        .separator-small {
+            display: none;
+            margin-bottom: 0;
+        }
+        margin-bottom: 20px;
+    }
 }
 
 .author-img{
     border-radius: 50%;
     margin-bottom: 25px;
+    border: 2px solid $color-dark-bg;
+    transition: 0.2s ease-out;
+    @media screen and (min-width: $desktop-vp){
+        margin-bottom: 0;
+    }
+    &:hover {
+        border: 2px solid $color-dark-icon;
+        transition: 0.3s ease-in;
+    }
 }
 
 
@@ -28,6 +44,10 @@
     margin-bottom: 3.125rem;
     @media screen and(min-width: $tablet-vp){
         color: #ffffff;
+    }
+
+    @media screen and(min-width: $desktop-vp){
+        margin-bottom: 2rem;
     }
 }
 
@@ -53,12 +73,30 @@
       font-size: 1.375rem;
       color: white;
       margin-bottom: 10px;
+      @media screen and (min-width: $desktop-vp){
+          margin-bottom: 3rem;
+      }
     }
 
     a:hover {
         text-decoration: none;
         color: rgb(233, 231, 231);
     }
+}
+
+.header-contact-details {
+    display: none;
+
+    @media screen and (min-width: $desktop-vp){
+        display: block;
+    }
+    font-size: 1.15rem;
+    color: darken($color-dark-icon, 15%);
+    li {
+        margin-bottom: 5px;
+    }
+    margin-bottom: 3rem;
+
 }
 
 .tools {
