@@ -559,7 +559,7 @@ small, .text_small {
 /* Screen Variables */
 .site-header {
   background: #353541;
-  padding: 0 0 0.5rem 0;
+  padding: .5rem 0 .5rem 0;
   color: white;
   text-align: center;
   margin-bottom: 105px; }
@@ -579,11 +579,19 @@ small, .text_small {
 
 .site-header .hashtags {
   color: #aeaeb1;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-bottom: 3.125rem; }
+  @media screen and (min-width: 760px) {
+    .site-header .hashtags {
+      color: #ffffff; } }
 
 .call-to-action {
   display: flex;
   flex-direction: column; }
+  @media screen and (min-width: 760px) {
+    .call-to-action {
+      flex-direction: row;
+      justify-content: center; } }
   .call-to-action a {
     margin-left: auto;
     margin-right: auto;
@@ -593,6 +601,11 @@ small, .text_small {
     font-size: 1.375rem;
     color: white;
     margin-bottom: 10px; }
+    @media screen and (min-width: 760px) {
+      .call-to-action a {
+        margin: 0 25px 75px 0; }
+        .call-to-action a:last-of-type {
+          margin-right: 0; } }
   .call-to-action a:hover {
     text-decoration: none;
     color: #e9e7e7; }
@@ -625,6 +638,9 @@ small, .text_small {
   text-align: center;
   max-width: 480px;
   margin-bottom: 100px; }
+  @media screen and (min-width: 760px) {
+    .skills-summary {
+      max-width: 700px; } }
   .skills-summary svg {
     width: 233px; }
   .skills-summary h2 {
@@ -632,6 +648,47 @@ small, .text_small {
     margin-bottom: 20px; }
   .skills-summary .separator-small {
     margin-bottom: 30px; }
+  .skills-summary .skills-blurb {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 580px;
+    color: #7e7e7e; }
+  @media screen and (min-width: 760px) {
+    .skills-summary h2 {
+      font-weight: 700;
+      color: #939191; }
+    .skills-summary .separator-small {
+      display: none; }
+    .skills-summary .skills-blurb {
+      display: block; } }
+
+@media screen and (min-width: 760px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .skills .skill-item {
+      flex-basis: 50%; } }
+
+.skill-item h3 {
+  display: none;
+  font-weight: 700;
+  color: #746868; }
+
+.skill-item p {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28ch;
+  color: #c1bdbd;
+  font-weight: 600; }
+
+@media screen and (min-width: 760px) {
+  .skill-item h3 {
+    display: block; }
+  .skill-item p {
+    display: block; } }
 
 .single-chart {
   margin-left: auto;
@@ -639,6 +696,9 @@ small, .text_small {
   width: 100%;
   justify-content: space-around;
   margin-bottom: 50px; }
+  @media screen and (min-width: 760px) {
+    .single-chart {
+      margin-bottom: 0; } }
 
 .circular-chart {
   display: block;
@@ -689,7 +749,8 @@ small, .text_small {
 
 .social-media-section {
   text-align: center;
-  margin-bottom: 65px; }
+  margin-bottom: 65px;
+  min-height: 410px; }
   @media screen and (min-width: 760px) {
     .social-media-section {
       background: #889ea8;
@@ -829,7 +890,7 @@ small, .text_small {
     margin-bottom: .5rem; }
   .job-position .job-description {
     padding-bottom: 1rem;
-    font-weight: 600; }
+    font-weight: 400; }
 
 .job-position:nth-child(odd) {
   background: #7ac943; }
@@ -896,7 +957,20 @@ small, .text_small {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    font-weight: 600; }
+    font-weight: 600;
+    color: #a6a4a6; }
+  @media screen and (min-width: 760px) {
+    .education-section h2 {
+      color: #3e3e3e;
+      font-weight: 700; }
+    .education-section .separator-small {
+      display: none; } }
+
+@media screen and (min-width: 760px) {
+  .education-card-layout {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px; } }
 
 .education-card {
   margin-left: auto;
@@ -928,6 +1002,28 @@ small, .text_small {
     margin-bottom: 0; }
   .education-card .education-description {
     margin-bottom: 0; }
+  @media screen and (min-width: 760px) {
+    .education-card {
+      margin-bottom: 20px;
+      max-width: 335px; }
+      .education-card h5 {
+        font-size: 1rem; }
+      .education-card .education-date {
+        font-size: .81rem;
+        max-width: 650px;
+        margin-bottom: 8px; }
+      .education-card .education-location {
+        font-size: .75rem; }
+        .education-card .education-location a {
+          font-size: .625rem; }
+      .education-card .education-description {
+        font-size: .75rem; }
+      .education-card .education-school-name {
+        margin-bottom: 10px; }
+      .education-card:nth-child(odd) {
+        margin-right: 0; }
+      .education-card:nth-child(even) {
+        margin-left: 0; } }
 
 .contact-form-section {
   max-width: 480px;

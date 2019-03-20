@@ -1,6 +1,7 @@
 .social-media-section {
   text-align: center;
   margin-bottom: 65px;
+  min-height: 410px;
   
   @media screen and (min-width:$tablet-vp){
     background: $color-grey-bg;

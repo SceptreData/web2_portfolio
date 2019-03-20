@@ -18,9 +18,25 @@
     @include push--auto;
     margin-bottom: 50px;
     font-weight: 600;
+    color: #a6a4a6;
+  }
+  @media screen and (min-width:$tablet-vp){
+    h2 {
+      color: #3e3e3e;
+      font-weight: 700;
+    }
+    .separator-small {
+      display:none;
+    }
   }
 }
 
+.education-card-layout {
+  @media screen and (min-width:$tablet-vp){
+    @include push--auto;
+    max-width: 700px;
+  }
+}
 .education-card {
   @include push--auto;
   background: #353541;
@@ -57,4 +73,40 @@
   }
   .education-program {margin-bottom: 0;}
   .education-description {margin-bottom: 0;}
+  
+  @media screen and (min-width:$tablet-vp){
+    margin-bottom: 20px;
+
+    max-width: 335px;
+    h5 {
+      font-size: 1rem;
+    }
+    .education-date {
+      font-size: .81rem;
+      max-width: 650px;
+      margin-bottom: 8px;
+    }
+
+    .education-location {
+      a {
+        font-size: .625rem;
+      }
+      font-size: .75rem;
+    }
+
+    .education-description {
+      font-size: .75rem;
+    }
+
+    .education-school-name {
+      margin-bottom: 10px;
+    }
+      &:nth-child(odd){
+        margin-right: 0;
+      }
+
+      &:nth-child(even){
+        margin-left: 0;
+      }
+    }
   }

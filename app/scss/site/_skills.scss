@@ -2,7 +2,11 @@
     @include push--auto;
     text-align: center;
     max-width: 480px;
+    @media screen and (min-width:$tablet-vp){
+      max-width: 700px;
+    }
     margin-bottom: 100px;
+
     svg {
         width: 233px;
     }
@@ -15,13 +19,75 @@
         margin-bottom: 30px;
     }
 
+    .skills-blurb {
+      display: none;
+      @include push--auto;
+      max-width: 580px;
+      color: #7e7e7e;
+    }
+
+    @media screen and(min-width: $tablet-vp){
+      h2 {
+        font-weight: 700;
+        color: #939191;
+      }
+
+      .separator-small {
+        display: none;
+      }
+
+      .skills-blurb {
+        display: block;
+      }
+    }
+
 }
+
+.skills {
+  @media screen and(min-width: $tablet-vp){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .skill-item {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.skill-item {
+  h3 {
+    display: none;
+    font-weight: 700;
+    color: $color-subheading-dk-alt;
+  }
+
+  p {
+    display: none;
+    @include push--auto;
+    max-width: 28ch;
+    color: #c1bdbd;
+    font-weight: 600;
+  }
+
+  @media screen and(min-width: $tablet-vp){
+    h3 {
+      display: block;
+    }
+    p {
+      display: block;
+    }
+  }
+}
+  
   
   .single-chart {
     @include push--auto;
     width: 100%;
     justify-content: space-around ;
     margin-bottom: 50px;
+    @media screen and (min-width: $tablet-vp){
+      margin-bottom: 0;
+    }
   }
   
   .circular-chart {
