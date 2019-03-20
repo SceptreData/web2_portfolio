@@ -828,8 +828,7 @@ small, .text_small {
       max-width: 90%; } }
   @media screen and (max-width: 380px) {
     .work-experience-section {
-      max-width: 100vw;
-      padding: .5rem; } }
+      max-width: 100vw; } }
   .work-experience-section h2 {
     color: #686868;
     margin-bottom: 13px; }
@@ -859,7 +858,8 @@ small, .text_small {
     margin-right: auto;
     color: #999999;
     font-weight: 600;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    padding: 0 .65rem; }
     @media screen and (min-width: 760px) {
       .work-experience-section .work-exp-blurb {
         max-width: 800px;

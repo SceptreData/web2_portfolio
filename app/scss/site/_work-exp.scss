@@ -9,7 +9,6 @@
 
     @media screen and (max-width: 380px){
         max-width: 100vw;
-        padding: .5rem;
     }
 
     h2 {
@@ -45,6 +44,7 @@
         color: $color-body-lt;
         font-weight: 600;
         margin-bottom: 40px;
+        padding: 0 .65rem;
         @media screen and (min-width: $tablet-vp){
             max-width: 800px;
             font-weight: 400;
