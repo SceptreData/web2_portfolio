@@ -1,93 +1,101 @@
 .site-nav {
-    background: $dark-blue;
-    color: $light-grey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    @media screen and (min-width: $desktop-vp){
-        display: block;
-    }
+  background: $dark-blue;
+  color: $light-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  @media screen and (min-width: $desktop-vp) {
+    display: block;
+  }
 }
 
 .nav-list-view {
-    display: none;
-    @include push--auto;
-    @media screen and (min-width: $desktop-vp){
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        max-width: 960px;
-        padding-bottom: 1rem;
-    }
-    
-    a {
-        font-size: 1.25rem;
-        color: $color-dark-icon;
-        &:hover {
-            color: lighten($color-dark-icon, 15%);
-            text-decoration: none;
-        }
-    }
+  display: none;
+  @include push--auto;
+  @media screen and (min-width: $desktop-vp) {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 960px;
+    padding-bottom: 1rem;
+  }
 
+  a {
+    font-size: 1.25rem;
+    color: $color-dark-icon;
+    &:hover {
+      color: lighten($color-dark-icon, 15%);
+      text-decoration: none;
+    }
+  }
+}
+
+.icon-view {
+  background: #000;
+  position: absolute;
+  top: 95px;
+  left: -100vw;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  box-shadow: 0 0 5px 0 grey;
 }
 
 .contact-details {
-    text-align: center;
+  text-align: center;
 
-    .email-address {
-        font-weight: 700;
-        margin-bottom: .5rem;
-    }
-    @media screen and (min-width: $desktop-vp){
-        display: none;
-    }
+  .email-address {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  @media screen and (min-width: $desktop-vp) {
+    display: none;
+  }
 }
 .menu-icon {
-    width: 40px;
-    fill: $light-grey;
-    @media screen and (min-width: $desktop-vp){
-        display: none;
-    }
+  width: 40px;
+  fill: $light-grey;
+  @media screen and (min-width: $desktop-vp) {
+    display: none;
+  }
 }
-
 
 .mobile-menu {
 }
 .icon-view {
+  display: flex;
+  flex-direction: column;
+  background: lighten($color-dark-bg, 10%);
+  justify-content: center;
+  position: absolute;
+  top: 95px;
+  left: -100vw;
+  width: 100%;
+  border-bottom: 1px solid lighten($color-dark-bg, 5%);
+  box-shadow: 0 0 5px 0 $evil-grey;
+
+  a {
     display: flex;
-    flex-direction: column;
-    background: lighten($color-dark-bg, 10%);
-    justify-content: center;
-    position: absolute;
-    top: 95px;
-    left: -100vw;
-    width: 100%;
-    border-bottom: 1px solid lighten($color-dark-bg, 5%);
-    box-shadow: 0 0 5px 0 $evil-grey;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    font-size: 1.5rem;
+    color: $color-light-icon;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
 
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: 300px;
-        font-size: 1.5rem;
-        color: $color-light-icon;
-        margin-bottom: .5rem;
-        padding: .25rem 0;
-
-        &:last-of-type{
-            margin-bottom: 0;
-        }
-
-        &:hover {
-            color: lighten($color-light-icon, 15%);
-            text-decoration: none;
-        }
+    &:last-of-type {
+      margin-bottom: 0;
     }
-    svg {
-        fill: $color-light-icon;
-        width: 4rem;
-        margin: 0 1rem;
+
+    &:hover {
+      color: lighten($color-light-icon, 15%);
+      text-decoration: none;
     }
+  }
+  svg {
+    fill: $color-light-icon;
+    width: 4rem;
+    margin: 0 1rem;
+  }
 }
